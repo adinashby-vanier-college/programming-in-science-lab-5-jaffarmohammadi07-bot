@@ -4,6 +4,7 @@
 # *   *
 # *   *
 # *****
+
 def hollow_square(n):
     result = ""
 
