@@ -4,7 +4,7 @@
 # *   *
 # *   *
 # *****
-def random_ass_shape(n):
+def hollow_square(n):
     result = ""
 
     for i in range(n):
@@ -22,7 +22,7 @@ def random_ass_shape(n):
 
     return result.rstrip()
 
-print(random_ass_shape(6))
+print(hollow_square(6))
 
 # 1
 # 12
