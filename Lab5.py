@@ -28,6 +28,7 @@ print(hollow_square(6))
 # 12
 # 123
 # 1234
+\
 def number_pattern(n):
     result = ""
 
