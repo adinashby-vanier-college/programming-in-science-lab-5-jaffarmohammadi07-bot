@@ -23,13 +23,13 @@ def hollow_square(n):
 
     return result.rstrip()
 
-print(hollow_square(6))
+print(hollow_square(5))
 
 # 1
 # 12
 # 123
 # 1234
-\
+
 def number_pattern(n):
     result = ""
 
@@ -39,6 +39,7 @@ def number_pattern(n):
         result += "\n"
     
     return result.rstrip()
+    
 print(number_pattern(4))
 
 # Example: For n = 5, sum = 1 + 2 + 3 + 4 + 5 = 15
@@ -56,9 +57,11 @@ def center_star_pyramid(n):
     for i in range(n):
         for j in range(n - i - 1):
             result += " "
+            
         for k in range(2 * i + 1):
             result += "*"
         result += "\n"
 
     return result.rstrip()
+    
 print(center_star_pyramid(4))
