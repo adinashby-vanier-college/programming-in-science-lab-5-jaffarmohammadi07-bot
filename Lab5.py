@@ -51,7 +51,7 @@ def sum_of_natural_numbers(n):
 #   ***
 #  *****
 # *******
-def center_star_pyramid(n):
+def centered_star_pyramid(n):
     result = ""
 
     for i in range(n):
@@ -64,4 +64,4 @@ def center_star_pyramid(n):
 
     return result.rstrip()
     
-print(center_star_pyramid(4))
+print(centered_star_pyramid(4))
