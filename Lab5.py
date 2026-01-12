@@ -16,10 +16,11 @@ def hollow_square(n):
                 j += 1
             result += "*"
 
-        result += "\n"
+        if i != n - 1:
+            result += "\n"
         i += 1
 
-    return result.rstrip()
+    return result
 
 
 def number_pattern(n):
@@ -31,10 +32,12 @@ def number_pattern(n):
         while j <= i:
             result += str(j)
             j += 1
-        result += "\n"
+
+        if i != n:
+            result += "\n"
         i += 1
 
-    return result.rstrip()
+    return result
 
 
 def sum_of_natural_numbers(n):
@@ -61,3 +64,10 @@ def centered_star_pyramid(n):
         stars = 0
         while stars < 2 * i + 1:
             result += "*"
+            stars += 1
+
+        if i != n - 1:
+            result += "\n"
+        i += 1
+
+    return result
