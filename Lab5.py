@@ -1,67 +1,63 @@
-# Example for n = 5:
-# *****
-# *   *
-# *   *
-# *   *
-# *****
-
 def hollow_square(n):
     result = ""
+    i = 0
 
-    for i in range(n):
+    while i < n:
         if i == 0 or i == n - 1:
-            for k in range(n):
+            j = 0
+            while j < n:
                 result += "*"
-
+                j += 1
         else:
             result += "*"
-            for j in range(n-2):
+            j = 0
+            while j < n - 2:
                 result += " "
+                j += 1
             result += "*"
-        result += "\n"
 
+        result += "\n"
+        i += 1
 
     return result.rstrip()
 
-print(hollow_square(5))
-
-# 1
-# 12
-# 123
-# 1234
 
 def number_pattern(n):
     result = ""
+    i = 1
 
-    for i in range(1,n + 1):
-        for j in range(1, i + 1):
+    while i <= n:
+        j = 1
+        while j <= i:
             result += str(j)
+            j += 1
         result += "\n"
-    
+        i += 1
+
     return result.rstrip()
-    
-print(number_pattern(4))
 
-# Example: For n = 5, sum = 1 + 2 + 3 + 4 + 5 = 15
+
 def sum_of_natural_numbers(n):
-    return ""
+    total = 0
+    i = 1
 
-# Example for n = 4:
-#    *
-#   ***
-#  *****
-# *******
+    while i <= n:
+        total += i
+        i += 1
+
+    return total
+
+
 def centered_star_pyramid(n):
     result = ""
+    i = 0
 
-    for i in range(n):
-        for j in range(n - i - 1):
+    while i < n:
+        spaces = 0
+        while spaces < n - i - 1:
             result += " "
-            
-        for k in range(2 * i + 1):
-            result += "*"
-        result += "\n"
+            spaces += 1
 
-    return result.rstrip()
-    
-print(centered_star_pyramid(4))
+        stars = 0
+        while stars < 2 * i + 1:
+            result += "*"
